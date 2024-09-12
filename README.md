@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# React Blog App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple and interactive blog application built with React. It allows users to view, create, and delete blog posts, providing a smooth and fluid user experience.
+It demonstrates core React concepts like component-based architecture, state management with `useState`, routing with `react-router-dom`, and fetching data from a server using a custom hook `useFetch`.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **View Blogs**: Lists all available blogs fetched from a local JSON server.
+- **Blog Details**: View the full details of a specific blog post by clicking on the blog title.
+- **Create Blog**: Add a new blog post with a title, body, and author.
+- **Delete Blog**: Delete a blog post from the server.
+- **404 Page**: Custom "Not Found" page for unmatched routes.
 
-### `npm start`
+## Project Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The app consists of the following components:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Components
 
-### `npm test`
+- **App.js**: The root component and the main entry point that defines the routing for the app.
+  - Uses `react-router-dom` for page routing.
+  - Includes pages like Home, Create Blog, Blog Details, and Not Found.
+  
+- **Navbar.js**: The navigation bar component.
+  - Contains links to the Home and Create Blog pages.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Home.js**: The home page that fetches and displays a list of blogs.
+  - Uses a custom `useFetch` hook to retrieve blog data from `http://localhost:8000/blogs`.
 
-### `npm run build`
+- **BlogList.js**: Displays a list of blog previews.
+  - Each blog links to the full blog details page.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **BlogDetails.js**: Displays the details of a selected blog and allows the user to delete it.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Create.js**: A form that lets users create a new blog.
+  - Upon submission, the blog is sent to the server, and the user is redirected to the homepage.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **NotFound.js**: Displays a custom 404 message for non-existing routes.
 
-### `npm run eject`
+### Custom Hook
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **useFetch.js**: A custom hook used for fetching data from an API. It handles loading states, errors, and fetch aborting.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
