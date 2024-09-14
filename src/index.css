@@ -101,3 +101,52 @@
   border-radius: 8px;
   cursor: pointer;
 }
+
+.edit-blog {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.edit-blog label {
+  text-align: left;
+  display: block;
+}
+.edit-blog h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+.edit-blog input, .edit-blog textarea, .edit-blog select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.edit-blog button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.blog-details a{
+  text-decoration: none;
+}
+
+.blog-details button {
+  background: #444142;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 10px; /* Add margin to separate the buttons */
+}
+
+.blog-details a button { /* Style for the Edit button specifically */
+  background: #f1356d;  /* Change background color for the Edit button */
+}
