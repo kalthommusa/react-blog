@@ -59,26 +59,18 @@ The app consists of the following components:
 **List of the Posts**
 ![](readme-imgs/home1.png)
 
-
 ## Blog Details
 ![](readme-imgs/blog-details2.png)
 ![](readme-imgs/blog-details3.png)
 
 ## Add a New Post
 ![](readme-imgs/create4.png)
-
 ![](readme-imgs/create5.png) 
-
 
 ## Update / Delete a Post
 ![](readme-imgs/edit6.png)
-
-![](readme-imgs/edit7.png)
-
 ![](readme-imgs/edit8.png)
-
 ![](readme-imgs/edit9.png)
 
-
-**Not Found Page**
+## Not Found Page
 ![](readme-imgs/not-found10.png)
