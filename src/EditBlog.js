@@ -27,7 +27,8 @@ const EditBlog = () => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(updatedBlog)
     }).then(() => {
-      history.push('/blogs/' + id);
+      // history.push('/blogs/' + id);
+      history.push('/');
     });
   };
 
