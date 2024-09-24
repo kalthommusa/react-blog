@@ -13,8 +13,6 @@ This project is a simple and interactive blog application built with React. It a
 
 ## Project Structure
 
-The app consists of the following components:
-
 ### Components
 
 - **App.js**: The root component and the main entry point that defines the routing for the app.
